@@ -23,7 +23,8 @@ function sumNumbersWithSeparator(numbers) {
     if (negativeNumbers.length > 0) {
         throw new Error(`Negatives numbers not allowed: ${negativeNumbers.join(', ')}`);
     }
-    return negativeNumbers;
+    
+    return parsedNumbers.reduce((sum, num) => sum + num, 0);
 
 }
 
