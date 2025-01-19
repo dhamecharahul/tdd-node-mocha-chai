@@ -52,6 +52,10 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;\n-1;2;3').toString(), [-1].toString());
   });
 
+  it('should throw error for negative numbers', () => {
+    assert.throws(() => add('1,-2,3'), Error, "Negatives numbers not allowed: -2");
+  });
+
 
 
   
