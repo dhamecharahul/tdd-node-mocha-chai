@@ -7,4 +7,8 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.isDefined(sumFunc())
   })
 
+  it('should return 0 for empty string', () => {
+    assert.equal(sumFunc(''), 0 );
+  });
+
 });
