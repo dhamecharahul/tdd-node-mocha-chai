@@ -43,6 +43,11 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;\n1;2;3').toString(), [1,2,3].toString());
   });
 
+
+  it('should convert check chars and if NAN is found return 0', () => {
+    assert.equal(sumFunc('//;\n@;2;3').toString(), [0,2,3].toString());
+  });
+
   
 
 
