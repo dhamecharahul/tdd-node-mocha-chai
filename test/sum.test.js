@@ -48,12 +48,16 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;\n@;2;3').toString(), [0,2,3].toString());
   });
 
-  it('should get nagative number if exist and store it', () => {
+  xit('should get nagative number if exist and store it', () => {
     assert.equal(sumFunc('//;\n-1;2;3').toString(), [-1].toString());
   });
 
   it('should throw error for negative numbers', () => {
     assert.throws(() => sumFunc('1,-2,3'), Error, "Negatives numbers not allowed: -2");
+  });
+
+  it('should throw error for multiple negative numbers', () => {
+    assert.throws(() => sumFunc('1,-2,-3'), Error, "Negatives numbers not allowed: -2, -3");
   });
 
 

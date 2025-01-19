@@ -20,6 +20,9 @@ function sumNumbersWithSeparator(numbers) {
         });
 
     const negativeNumbers = parsedNumbers.filter(num => num < 0);
+    if (negativeNumbers.length > 0) {
+        throw new Error(`Negatives numbers not allowed: ${negativeNumbers.join(', ')}`);
+    }
     return negativeNumbers;
 
 }
