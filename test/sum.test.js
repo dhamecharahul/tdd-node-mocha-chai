@@ -53,7 +53,7 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
   });
 
   it('should throw error for negative numbers', () => {
-    assert.throws(() => add('1,-2,3'), Error, "Negatives numbers not allowed: -2");
+    assert.throws(() => sumFunc('1,-2,3'), Error, "Negatives numbers not allowed: -2");
   });
 
 
