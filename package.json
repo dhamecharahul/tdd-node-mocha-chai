@@ -1,0 +1,12 @@
+{
+  "name": "tdd-node-mocha-chai",
+  "version": "1.0.0",
+  "description": "function in  node with TDD approach using mocha chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
