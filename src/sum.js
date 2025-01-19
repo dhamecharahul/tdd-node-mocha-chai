@@ -10,7 +10,7 @@ function sumNumbersWithSeparator(numbers) {
       delimiter = numbers.substring(2, numbers.indexOf('\n'));
       numbers = numbers.substring(numbers.indexOf('\n') + 1);
     }
-    return delimiter;
+    return numbers;
 
 }
 
