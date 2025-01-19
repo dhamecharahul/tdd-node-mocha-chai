@@ -31,12 +31,16 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;,\n1;2,3').toString(), new RegExp(`[\\;|\\,]`).toString());
   });
 
-  it('should return number array with regex of ;', () => {
+  xit('should return number array with regex of ;', () => {
     assert.equal(sumFunc('//;\n1;2;3').toString(), ['1','2','3'].toString());
   });
 
-  it('should return number array with regex of ;', () => {
+  xit('should return number array with regex of ;', () => {
     assert.equal(sumFunc('//;,\n1;2,3').toString(), ['1','2','3'].toString());
+  });
+
+  it('should convert the string into number and return numbers instead for char', () => {
+    assert.equal(sumFunc('//;\n1;2;3').toString(), [1,2,3].toString());
   });
 
   
