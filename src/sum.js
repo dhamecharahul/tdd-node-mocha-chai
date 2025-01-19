@@ -16,7 +16,7 @@ function sumNumbersWithSeparator(numbers) {
     const parsedNumbers = numbers.split(separatorRegex)
         .map(num => {
             const trimmedNum = num.trim();
-            return parseInt(trimmedNum);
+            return isNaN(trimmedNum) ? 0 : parseInt(trimmedNum);
         });
     return parsedNumbers;
 
