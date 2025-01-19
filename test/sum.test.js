@@ -60,6 +60,10 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.throws(() => sumFunc('1,-2,-3'), Error, "Negatives numbers not allowed: -2, -3");
   });
 
+  it('should return the number itself', () => {
+    assert.equal(sumFunc('1'), 1 );
+  });
+
 
 
   
