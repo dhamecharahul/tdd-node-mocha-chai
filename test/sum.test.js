@@ -11,4 +11,10 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc(''), 0 );
   });
 
+  it('should return delemete as ,', () => {
+    assert.equal(sumFunc('1,2,3'), ',\n' );
+  });
+
+
+
 });
