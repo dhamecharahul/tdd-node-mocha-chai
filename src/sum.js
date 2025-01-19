@@ -1,5 +1,8 @@
 function sumNumbersWithSeparator(numbers) {
-    if(numbers) return numbers;
+    
+    if (!numbers) {
+        return 0;
+    }
 }
 
 module.exports = sumNumbersWithSeparator;
