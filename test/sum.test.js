@@ -84,8 +84,12 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;,\n1;2,3'), 6 );
   });
 
-  it('should support custom delimiters with special characters', () => {
+  it('should support custom delimiter with special characters', () => {
     assert.equal(sumFunc('//$\n1$2$3'), 6 );
+  });
+
+  it('should sum large number like 900009', () => {
+    assert.equal(sumFunc('1,900009,2'), 900012);
   });
 
 
