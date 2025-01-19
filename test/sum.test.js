@@ -23,6 +23,12 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;\n1;2;3'), '1;2;3' );
   });
 
+  it('should return delimeter regex with ;', () => {
+    assert.equal(sumFunc('//;\n1;2;3').toString(), new RegExp(`[\\;]`).toString());
+  });
+
+
+
 
 
 });
