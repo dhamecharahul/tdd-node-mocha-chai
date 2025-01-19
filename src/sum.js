@@ -10,7 +10,10 @@ function sumNumbersWithSeparator(numbers) {
       delimiter = numbers.substring(2, numbers.indexOf('\n'));
       numbers = numbers.substring(numbers.indexOf('\n') + 1);
     }
-    return numbers;
+
+    const separatorRegex = new RegExp(`[${delimiter.split('').map(char => '\\' + char).join('|')}]`);
+    return separatorRegex;
+
 
 }
 
