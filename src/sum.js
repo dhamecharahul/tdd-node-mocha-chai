@@ -18,9 +18,9 @@ function sumNumbersWithSeparator(numbers) {
             const trimmedNum = num.trim();
             return isNaN(trimmedNum) ? 0 : parseInt(trimmedNum);
         });
-    return parsedNumbers;
 
-
+    const negativeNumbers = parsedNumbers.filter(num => num < 0);
+    return negativeNumbers;
 
 }
 
