@@ -6,6 +6,10 @@ function sumNumbersWithSeparator(numbers) {
 
     // Handle custom delimiters
     let delimiter = ',\n';
+    if (numbers.startsWith('//')) {
+      delimiter = numbers.substring(2, numbers.indexOf('\n'));
+      numbers = numbers.substring(numbers.indexOf('\n') + 1);
+    }
     return delimiter;
 
 }
