@@ -72,6 +72,10 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('1\n2\n3'), 6 );
   });
 
+  it('should sum numbers separated by comma and newline', () => {
+    assert.equal(sumFunc('1,2\n3'), 6 );
+  });
+
 
 
   
