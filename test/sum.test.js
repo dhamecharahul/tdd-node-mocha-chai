@@ -64,6 +64,10 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('1'), 1 );
   });
 
+  it('should sum numbers separated by comma', () => {
+    assert.equal(sumFunc('1,2,3'), 6 );
+  });
+
 
 
   
