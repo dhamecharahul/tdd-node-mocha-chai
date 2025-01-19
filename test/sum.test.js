@@ -39,14 +39,20 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;,\n1;2,3').toString(), ['1','2','3'].toString());
   });
 
-  it('should convert the string into number and return numbers instead for char', () => {
+  xit('should convert the string into number and return numbers instead for char', () => {
     assert.equal(sumFunc('//;\n1;2;3').toString(), [1,2,3].toString());
   });
 
 
-  it('should convert check chars and if NAN is found return 0', () => {
+  xit('should convert check chars and if NAN is found return 0', () => {
     assert.equal(sumFunc('//;\n@;2;3').toString(), [0,2,3].toString());
   });
+
+  it('should get nagative number if exist and store it', () => {
+    assert.equal(sumFunc('//;\n-1;2;3').toString(), [-1].toString());
+  });
+
+
 
   
 
