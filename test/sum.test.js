@@ -23,20 +23,20 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('//;\n1;2;3'), '1;2;3' );
   });
 
-  it('should return delimeter regex with ;', () => {
+  xit('should return delimeter regex with ;', () => {
     assert.equal(sumFunc('//;\n1;2;3').toString(), new RegExp(`[\\;]`).toString());
   });
 
-  it('should return delimeter regex with ; and ,', () => {
+  xit('should return delimeter regex with ; and ,', () => {
     assert.equal(sumFunc('//;,\n1;2,3').toString(), new RegExp(`[\\;|\\,]`).toString());
   });
 
   it('should return number array with regex of ;', () => {
-    assert.equal(sumFunc('//;\n1;2;3'), ['1','2','3']);
+    assert.equal(sumFunc('//;\n1;2;3').toString(), ['1','2','3'].toString());
   });
 
   it('should return number array with regex of ;', () => {
-    assert.equal(sumFunc('//;,\n1;2,3'), ['1','2','3']);
+    assert.equal(sumFunc('//;,\n1;2,3').toString(), ['1','2','3'].toString());
   });
 
   
