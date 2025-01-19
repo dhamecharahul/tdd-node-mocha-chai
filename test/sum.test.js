@@ -76,6 +76,10 @@ describe('sumNumbersWithSeparator test cases TDD', () => {
     assert.equal(sumFunc('1,2\n3'), 6 );
   });
 
+  it('should support custom delimiters ;', () => {
+    assert.equal(sumFunc('//;\n1;2;3'), 6 );
+  });
+
 
 
   
